@@ -8,23 +8,12 @@ The syntax for the use of the LTCN classifier is compatible with `scikit-learn` 
 
 ### Training
 
-First create an LTCN object specifying the following parameters:
+First create an LTCN object specifying the desired parameters. 
 
-T         :  {int}, default 20
-             Number of iterations to be performed
-phi       :  {float}, default 0.8
-             Amount of non-linearity during reasoning.
-method    :  {String}, default 'inverse'
-             Regression approach ('inverse', 'ridge')
-function  :  {String}, default 'sigmoid'
-             Activation function ('sigmoid', 'hyperbolic')
-alpha :      {float}, default 1.0E-4
-             Positive penalization for L2-regularization
-
-For our example with iris dataset we are going to use the following values:
+For our example with iris dataset, we are going the following paremters: `T=5` is the numner of iterations, `phi=0.9` is the amount of non-linearity during reasoning, `function='sigmoid'` is the activation function, `method='ridge'` is the learning algorithm and `alpha=1.0E-4` is the regularization penalty.
 
 ```python
-model = LTCN(T=5, phi=0.9, method='ridge')
+model = LTCN(T=5, phi=0.9, function='sigmoid', method='ridge', alpha=1.0E-4)
 ```
 
 For training a LTCN model simply call the fit method:
