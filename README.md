@@ -1,2 +1,3 @@
-# ltcn-classifier
-Recurrence-Aware Long-Term Cognitive Network for Explainable Pattern Classification
+## Long-Term Cognitive Network for Pattern Classification
+
+Summary. This repository introduces a Long-Term Cognitive Network (LTCN) model for structured pattern classification problems. This recurrent neural network incorporates a quasi-nonlinear reasoning rule that allows controlling nonlinearity. Besides, it uses a recurrence-aware decision model that evades the issues posed by the unique fixed point while introducing a deterministic learning algorithm to compute the tunable parameters. The simulations show that our interpretable model obtains competitive results when compared to state-of-the-art white and black-box models.
