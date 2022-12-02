@@ -2,6 +2,14 @@
 
 This repository introduces the Long-Term Cognitive Network (LTCN) model for structured pattern classification problems. This recurrent neural network incorporates a quasi-nonlinear reasoning rule that allows controlling the amount of non-linearity in the reasoning mechanism. Furthermore, this neural classifier uses a recurrence-aware decision model that evades the issues posed by the unique fixed point while introducing a deterministic learning algorithm to compute the tunable parameters. The simulations show that this classifier obtains competitive results when compared to state-of-the-art white and black-box models.
 
+## Install
+
+LTCN can be installed from [PyPI](https://pypi.org/project/ltcnclassifier/)
+
+<pre>
+pip install ltcnclassifier
+</pre>
+
 ## Usage example
 
 The syntax for the use of the LTCN classifier is compatible with `scikit-learn` library.
