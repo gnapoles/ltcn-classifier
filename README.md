@@ -4,10 +4,10 @@ This repository introduces the Long-Term Cognitive Network (LTCN) model for stru
 
 ## Install
 
-LTCN can be installed from [PyPI](https://pypi.org/project/ltcnclassifier/)
+LTCN can be installed from [PyPI](https://pypi.org/project/ltcn/)
 
 <pre>
-pip install ltcnclassifier
+pip install ltcn
 </pre>
 
 ## Usage example

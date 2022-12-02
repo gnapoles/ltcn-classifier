@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='ltcnclassifier',
+    name='ltcn',
     version='0.1.0',
     description='Long-term Cognitive Networks for pattern classification',
     long_description="This package introduces the Long-Term Cognitive Network (LTCN) model for structured pattern " +
@@ -15,7 +15,7 @@ setup(
     author='Gonzalo Nápoles',
     author_email='g.r.napoles@uvt.nl',
     license='MIT License',
-    packages=['ltcnclassifier'],
+    packages=['ltcn'],
     install_requires=['numpy', 'scipy', 'scikit-learn', 'pandas'],
     classifiers=[
         'Development Status :: 1 - Planning',
