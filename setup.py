@@ -4,12 +4,13 @@ setup(
     name='ltcnclassifier',
     version='0.1.0',
     description='Long-term Cognitive Networks for pattern classification',
-    long_description="Long-term Cognitive Networks are trained with an inverse learning rule. " +
-                     "In this model, the weights connecting the input neurons are coefficients " +
-                     "of multiple regressions models while the weights connecting the temporal " +
-                     "states with and outputs are computed using a learning method (the Moore–Penrose " +
-                     "inverse method when no regularization is needed or the Ridge regression method " +
-                     "when the model might overfit the data).",
+    long_description="This package introduces the Long-Term Cognitive Network (LTCN) model for structured pattern " +
+                     "classification problems. This recurrent neural network incorporates a quasi-nonlinear reasoning " +
+                     "rule that allows controlling the ammout of nonlinearity in the reasoning mechanism. Furthermore, " +
+                     "this neural classifier uses a recurrence-aware decision model that evades the issues posed by " +
+                     "the unique fixed point while introducing a deterministic learning algorithm to compute the " +
+                     "tunable parameters. The experiments in the original paper show that this classifier obtains " +
+                     "competitive results when compared to state-of-the-art white and black-box models.",
     url='https://github.com/gnapoles/ltcn-classifier',
     author='Gonzalo Nápoles',
     author_email='g.r.napoles@uvt.nl',
