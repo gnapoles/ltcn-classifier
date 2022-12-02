@@ -6,7 +6,7 @@ setup(
     description='Long-term Cognitive Networks for pattern classification',
     long_description="This package introduces the Long-Term Cognitive Network (LTCN) model for structured pattern " +
                      "classification problems. This recurrent neural network incorporates a quasi-nonlinear reasoning " +
-                     "rule that allows controlling the ammout of nonlinearity in the reasoning mechanism. Furthermore, " +
+                     "rule that allows controlling the amount of non-linearity in the reasoning mechanism. Furthermore, " +
                      "this neural classifier uses a recurrence-aware decision model that evades the issues posed by " +
                      "the unique fixed point while introducing a deterministic learning algorithm to compute the " +
                      "tunable parameters. The experiments in the original paper show that this classifier obtains " +
