@@ -70,7 +70,7 @@ for train_index, test_index in skf.split(X, iris.target):
 print(sum(errors) / len(errors))
 ```
 
-The minimal working example using Iris dataset is available as a [jupyter notebook]().
+The minimal working example using Iris dataset is available as a [jupyter notebook](https://github.com/gnapoles/ltcn-classifier/blob/main/ltcn-classifier/example_iris.ipynb).
 
 ## Reference
 
