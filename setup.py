@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='ltcn-classifier',
+    name='ltcnclassifier',
     version='0.1.0',
     description='Long-term Cognitive Networks for pattern classification',
     long_description="Long-term Cognitive Networks are trained with an inverse learning rule. " +
@@ -14,7 +14,7 @@ setup(
     author='Gonzalo Nápoles',
     author_email='g.r.napoles@uvt.nl',
     license='MIT License',
-    packages=['ltcn-classifier'],
+    packages=['ltcnclassifier'],
     install_requires=['numpy', 'scipy', 'scikit-learn', 'pandas'],
     classifiers=[
         'Development Status :: 1 - Planning',
