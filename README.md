@@ -8,23 +8,12 @@ The syntax for the use of the LTCN classifier is compatible with `scikit-learn` 
 
 ### Training
 
-First create an LTCN object specifying the following parameters:
+First create an LTCN object specifying the desired parameters. 
 
-            T         :  {int}, default 20
-                         Number of iterations to be performed
-            phi       :  {float}, default 0.8
-                         Amount of non-linearity during reasoning.
-            method    :  {String}, default 'inverse'
-                         Regression approach ('inverse', 'ridge')
-            function  :  {String}, default 'sigmoid'
-                         Activation function ('sigmoid', 'hyperbolic')
-            alpha :      {float}, default 1.0E-4
-                         Positive penalization for L2-regularization
-
-For our example with iris dataset we are going to use the following values:
+For our example with iris dataset, we will use the following paremters: `T=5` is the numner of iterations, `phi=0.9` is the amount of non-linearity during reasoning, `function='sigmoid'` is the activation function, `method='ridge'` is the learning algorithm and `alpha=1.0E-4` is the regularization penalty.
 
 ```python
-model = LTCN(T=5, phi=0.9, method='ridge')
+model = LTCN(T=5, phi=0.9, function='sigmoid', method='ridge', alpha=1.0E-4)
 ```
 
 For training a LTCN model simply call the fit method:
@@ -43,7 +32,7 @@ Y_pred = model.predict(X_test)
 
 ### Evaluation
 
-Use within a cross-validation (or any other suitable validation strategy from scikit-learn) for evaluating the performance of the model:
+Use the model within cross-validation (or any other suitable validation strategy from scikit-learn) for evaluating the performance. The example uses `5-fold-cv` and Kappa score for model selection:
 
 ```python
 iris = datasets.load_iris(as_frame=True)
@@ -60,7 +49,7 @@ for train_index, test_index in skf.split(X, iris.target):
     X_train, X_test = X[train_index], X[test_index]
     Y_train, Y_test = Y[train_index], Y[test_index]
 
-    model = LTCN(T=5, phi=0.9, method="ridge", function="sigmoid", alpha=1.0E-4)
+    model = LTCN(T=5, phi=0.9, function='sigmoid', method='ridge', alpha=1.0E-4)
     model.fit(X_train, Y_train)
     
     Y_pred = model.predict(X_test)
