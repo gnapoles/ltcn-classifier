@@ -32,7 +32,7 @@ Y_pred = model.predict(X_test)
 
 ### Evaluation
 
-Use the model within cross-validation (or any other suitable validation strategy from scikit-learn) for evaluating the performance. The example uses `5-fold` and Kappa score for model selection:
+Use the model within cross-validation (or any other suitable validation strategy from scikit-learn) for evaluating the performance. The example uses `5-fold-cv` and Kappa score for model selection:
 
 ```python
 iris = datasets.load_iris(as_frame=True)
